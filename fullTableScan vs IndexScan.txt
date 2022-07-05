@@ -1,0 +1,4 @@
+depends on the Output sampling
+
+table scan, index scan, index seek
+

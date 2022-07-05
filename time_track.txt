@@ -4,3 +4,13 @@
 
 11.50 - https://qr.ae/pvPE0Z
 how concurrency is implemented
+
+12 - SQL Languages 
+
+12.10 - How Query is processed - analyticsvidhya.com
+
+12.20 - TCL Commands
+
+2.00 - index scan vs full scan
+
+2.20 - explain - https://www.youtube.com/watch?v=Mll5SqR4RYk

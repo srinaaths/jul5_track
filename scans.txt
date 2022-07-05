@@ -1,0 +1,9 @@
+EXPLAIN
+
+startupCost, TotalCost, rows, width
+
+ANALYZE - actually runs the query
+
+Query Plan
+
+Nested Loop

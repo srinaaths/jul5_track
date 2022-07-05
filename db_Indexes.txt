@@ -1,0 +1,51 @@
+How, why, and when
+
+postgres tries to optimize cost
+cost - number of pages accessed
+default page - 8k
+indexes - cost time tradeoff
+
+CREATE TABLE post (
+    ...
+);
+
+index storage size comparison
+
+tables - just a sequence of pages
+
+each page - Page Header, ItemID Data, Tuples - page no. and ItemID
+
+EXPLAIN ANALYZE - what it plans to do to execute the plan
+
+Full Table scan
+
+Index - Key Value Store - 
+(list of values, (page, itemID))
+
+sorted list - b tree - to find efficiently
+
+store fewer bytes = access fewer pages
+
+balancing algorithm
+
+leaf nodes contain key values - less than, greater than - range - follow the tree
+
+b+ tree - leaf pages hold links to the next leaf page - no need to climb up again
+
+create INDEX on post(account_id);
+
+2mb compared to 24
+
+uses index scan to get the page needed to be read
+
+aggregate like COUNT(*) uses index if that is the only column specified in the where clause
+
+where - 2 parameters
+
+index on multiple fields
+
+occupies memory in ram - the tradeoff
+
+updating indexes makes writing slower
+
+partial indexes 
