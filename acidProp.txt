@@ -1,0 +1,15 @@
+Implementation:
+
+mechanism to indicate which transactions have finished - or by keeping a copy of the data before any changes occurred.
+
+Journaling
+
+Some form of logging/ Journaling to track the changes
+
+system syncs the logs as necessary after changes have taken place
+
+most common implementation of acid properties done via locks
+
+data is locked until a transaction completes or fails, to guarantee acid
+
+for durability, databases implement write-ahead logs
