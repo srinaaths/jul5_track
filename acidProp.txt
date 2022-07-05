@@ -16,3 +16,42 @@ for durability, databases implement write-ahead logs
 
 How concurrency is possible in db:
 
+Isolation Transaction Level:
+
+T1 & T2 - isolated from each other
+
+various isolation levels are defined in sql
+
+Violations:
+
+Dirty Read,
+Nonrepeatable Read,
+Phantom
+
+Dirty Read
+T1 - writes (but not commited)
+T2 - reads
+
+Nonrepeatable Read:
+
+T1 - reads the value of A
+T2 - writes the value of A
+T1 - reads again - finds that value has been changed
+
+reading cannot be repeated in this case
+
+Phantom:
+T1 (Q1(c))
+for the same query, some extra row is being read
+
+4 isolation levels:
+read uncommitted
+read committed
+repeatable read
+serializable
+
+concurrency control protocol
+
+while T1 is performing write operation, T2 should not be allowed access
+
+basically, we lock the access of that database item

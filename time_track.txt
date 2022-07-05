@@ -14,3 +14,5 @@ how concurrency is implemented
 2.00 - index scan vs full scan
 
 2.20 - explain - https://www.youtube.com/watch?v=Mll5SqR4RYk
+
+2.30 to 3.50 - Indexes, Blocks
