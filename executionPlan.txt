@@ -2,3 +2,28 @@ key lookup
 clustered index scan
 index seek
 right to left, top to bottom
+
+Query Tuning:
+
+SARGability
+
+--Index scan vs Index seek 
+--where clause - use it properly with no logical changes(avoid the use of functions)
+
+SeekNotHappening
+
+MultiColumn Indexes - seek works only if we go from left column to right one
+
+redundant indexes - will result in worse case scenario
+
+the indexes need to be created very carefully
+
+ensure that the seeking capability is not lost with wildcard charactor at starting etc.
+
+https://www.youtube.com/watch?v=FoTMJFZ4wwg
+
+Implicit Conversions:
+
+unicode instead of original datatype of varchar - cpu is utilized in planning the conversion
+
+instead, use explicit conversion - tell sql server what exactly to do - helpful
