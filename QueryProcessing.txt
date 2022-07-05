@@ -1,0 +1,9 @@
+3 main steps of retrieving the data from the database
+
+SQL command - Parser and Translator - Relational algebra expression - Optimizer (Also gives statistics of data) - Execution Plan - Evaluation Engine - Query Output
+
+SQL is high level language - needs to be converted to a language understandable by the physical implementaion of the database
+
+Parser & translator - functions
+Optimization - functions - same query can be executed in different ways 
+Execution Plan - Systematic step by step execution of primitive operations for fetching of data. Different evaluation queries for a particular query might have different query costs
