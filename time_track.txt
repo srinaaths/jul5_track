@@ -1,3 +1,6 @@
 11.30 - ACID properties in detail - https://en.wikipedia.org/wiki/ACID
 
 11.40 - how each property is implemented - https://www.quora.com/How-are-ACID-transactions-implemented-in-database-servers
+
+11.50 - https://qr.ae/pvPE0Z
+how concurrency is implemented

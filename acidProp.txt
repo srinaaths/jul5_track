@@ -13,3 +13,6 @@ most common implementation of acid properties done via locks
 data is locked until a transaction completes or fails, to guarantee acid
 
 for durability, databases implement write-ahead logs
+
+How concurrency is possible in db:
+

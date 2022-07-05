@@ -1,0 +1,15 @@
+4 types:
+DDL:
+Includes creating and altering the schema of the database
+Eg. CREATE, DROP, ALTER, TRUNCATE
+
+DML
+Includes updating the data in the database
+Eg. SELECT, UPDATE, INSERT, DELETE
+
+DCL
+Includes commands for access to the database 
+Eg. GRANT, REVOKE
+
+TCL
+commands used to manage the transactions in the DB - COMMIT, ROLLBACK
