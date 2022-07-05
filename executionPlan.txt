@@ -1,0 +1,4 @@
+key lookup
+clustered index scan
+index seek
+right to left, top to bottom
